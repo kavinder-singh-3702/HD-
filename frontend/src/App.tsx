@@ -1,4 +1,4 @@
-import Signin from "../src/components/Signup";
+import Signin from "./components/Signin";
 
 function App() {
   return (

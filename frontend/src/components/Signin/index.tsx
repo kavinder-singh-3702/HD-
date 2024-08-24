@@ -4,11 +4,14 @@ import heroImage from "../../assets/signin.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
 
-const SignIn = () => {
-  const [passwordVisible, setPasswordVisible] = useState(false);
+// No props or additional types are needed for this component
+const SignIn: React.FC = () => {
+  // State to toggle password visibility
+  const [passwordVisible, setPasswordVisible] = useState<boolean>(false);
 
+  // Function to toggle password visibility
   const togglePasswordVisibility = () => {
-    setPasswordVisible(!passwordVisible);
+    setPasswordVisible((prevState) => !prevState);
   };
 
   return (
